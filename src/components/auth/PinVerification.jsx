@@ -2,69 +2,61 @@
 
 import React, { useState } from 'react';
 
-// Constants for security parameters
-const MAX_ATTEMPTS = 3;
-const LOCKOUT_DURATION_MS = 5 * 60 * 1000; // 5 minutes
-
 /**
- * A component for 6-digit PIN verification with attempt limiting and lockout.
+ * A secure component for 6-digit PIN verification.
+ * It delegates all authentication logic to a secure backend API endpoint,
+ * resolving critical client-side vulnerabilities.
+ * It also provides clear user feedback with a loading state.
+ *
  * @param {object} props - The component props.
- * @param {Function} props.onPinSuccess - A callback function to execute upon successful verification.
+ * @param {Function} props.onPinSuccess - Callback function executed on successful verification.
  */
 const PinVerification = ({ onPinSuccess }) => {
-  // State hooks for managing the component's internal state
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
-  const [attempts, setAttempts] = useState(0);
-  const [isLocked, setIsLocked] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Ensures only numeric input up to 6 digits is allowed
+  // Handles pin input change. The maxLength attribute on the input element
+  // makes an additional length check here redundant.
   const handlePinChange = (e) => {
     const value = e.target.value.replace(/[^0-9]/g, '');
-    if (value.length <= 6) {
-      setPin(value);
-    }
+    setPin(value);
   };
 
-  // Handles the form submission and PIN validation logic
-  const handleSubmit = (e) => {
+  // Handles form submission by calling the backend API.
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
+    setIsLoading(true);
 
-    if (isLocked) {
-      setError('Account is locked. Please try again later.');
-      return;
-    }
+    try {
+      // Send the PIN to the secure backend for validation.
+      const response = await fetch('/api/auth/verify-pin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ pin, userId: 'current-user-id' }),
+      });
 
-    // IMPORTANT: In a real application, the CORRECT_PIN should not be hardcoded.
-    // It should be fetched from a secure store and compared using a hashing algorithm.
-    const CORRECT_PIN = '123456';
+      const data = await response.json();
 
-    if (pin === CORRECT_PIN) {
-      console.log('PIN Verified Successfully!');
-      setError('');
-      setAttempts(0);
-      if (onPinSuccess) {
-        onPinSuccess();
-      }
-    } else {
-      const newAttempts = attempts + 1;
-      setAttempts(newAttempts);
-      
-      // Lock the account if max attempts are reached
-      if (newAttempts >= MAX_ATTEMPTS) {
-        setError(`Too many failed attempts. Account locked for 5 minutes.`);
-        setIsLocked(true);
-        // Reset the lockout after the specified duration
-        setTimeout(() => {
-          setIsLocked(false);
-          setAttempts(0);
-          setError('');
-        }, LOCKOUT_DURATION_MS);
+      if (response.ok) {
+        // Success: The server confirmed the PIN is correct.
+        if (onPinSuccess) {
+          onPinSuccess();
+        }
       } else {
-        setError(`Invalid PIN. You have ${MAX_ATTEMPTS - newAttempts} attempts left.`);
+        // Failure: The server provides the error message.
+        setError(data.message || 'Invalid PIN or server error.');
       }
+    } catch (err) {
+      console.error('API call failed:', err);
+      setError('Cannot connect to the server. Please check your network.');
+    } finally {
+      setIsLoading(false);
+      setPin(''); // Clear the PIN input for security.
     }
-    setPin('');
   };
 
   return (
@@ -75,19 +67,19 @@ const PinVerification = ({ onPinSuccess }) => {
           type="password"
           value={pin}
           onChange={handlePinChange}
-          maxLength="6"
+          maxLength="6" // This attribute enforces the 6-digit limit.
           className="w-full px-4 py-3 mb-4 text-center text-2xl tracking-[0.5em] bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
           placeholder="●●●●●●"
-          disabled={isLocked}
+          disabled={isLoading}
           autoComplete="off"
         />
         {error && <p className="text-red-500 text-sm mb-4 text-center">{error}</p>}
         <button
           type="submit"
-          disabled={pin.length !== 6 || isLocked}
+          disabled={pin.length !== 6 || isLoading}
           className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
         >
-          {isLocked ? 'Locked' : 'Verify'}
+          {isLoading ? 'Verifying...' : 'Verify'}
         </button>
       </form>
     </div>
