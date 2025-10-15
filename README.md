@@ -1,9 +1,9 @@
 
 <img width="1024" height="1024" alt="Digital Wallet Logo - Blue and Gray_20250905_180504_0000" src="https://github.com/user-attachments/assets/a7c61e2f-79f9-420c-b63a-43d1ba016e0e" />
 
-💳 Wallet UI
+💳 ClarityVault2026
 
-A modern, responsive user interface for digital wallet applications built with React and Tailwind CSS. Now integrated with Crypto SDK for multichain wallet connectivity, secure encryption, and blockchain transactions.
+A modern, secure, and responsive multi-chain crypto wallet application built with React and Tailwind CSS. ClarityVault2026 provides seamless wallet connectivity for Bitcoin, Ethereum, and Stacks with clarity-driven UI, secure encryption, and blockchain transactions.
 
 ---
 
@@ -82,15 +82,15 @@ async function runWalletFlow() {
 
 ---
 
-🖼️ Wallet UI Preview
+🖼️ ClarityVault2026 Preview
 
 - Connect Wallet Button  
 - Balance Card Component  
 - Transaction List  
 - Send/Receive Modal  
-- Multichain Toggle Dropdown
+- Multi-chain Toggle Dropdown (Bitcoin, Ethereum, Stacks)
 
-> UI built with React + Tailwind. Fully responsive and customizable.
+> ClarityVault2026 UI built with React + Tailwind. Fully responsive and customizable with clarity-driven design.
 
 ---
 
