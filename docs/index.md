@@ -1,6 +1,6 @@
-# 📚 Wallet UI Documentation Index
+# 📚 ClarityVault2026 Documentation Index
 
-Welcome to the Wallet UI documentation hub. Below is a list of all available guides and references.
+Welcome to the ClarityVault2026 documentation hub. Below is a list of all available guides and references.
 
 ---
 

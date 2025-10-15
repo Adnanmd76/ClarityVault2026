@@ -1,11 +1,11 @@
-# 🎨 Branding Guide — Wallet UI  
+# 🎨 Branding Guide — ClarityVault2026  
 
-This document defines the **official branding rules, design philosophy, and guidelines** for Wallet UI. It ensures **visual consistency** and **cultural authenticity** across all platforms.  
+This document defines the **official branding rules, design philosophy, and guidelines** for ClarityVault2026. It ensures **visual consistency** and **cultural authenticity** across all platforms.  
 
 ---
 
 ## 🧬 Brand Philosophy  
-Wallet UI blends **modern fintech minimalism** with **traditional elegance**.  
+ClarityVault2026 blends **modern fintech minimalism** with **traditional elegance**.  
 Inspired by **calligraphy, sacred geometry, and cultural motifs**, the design reflects:  
 - **Trust** → secure and transparent user experience  
 - **Clarity** → accessible and clear design language  

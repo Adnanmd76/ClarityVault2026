@@ -1,6 +1,6 @@
-# ✅ Wallet UI Contribution Checklist
+# ✅ ClarityVault2026 Contribution Checklist
 
-This checklist helps new contributors follow the correct steps when contributing to Wallet UI.
+This checklist helps new contributors follow the correct steps when contributing to ClarityVault2026.
 
 ---
 
