@@ -105,10 +105,10 @@ Steps
 `bash
 
 Clone the repository
-git clone https://github.com/Adnanmd76/wallet-ui.git
+git clone https://github.com/Adnanmd76/ClarityVault2026.git
 
 Navigate into the project
-cd wallet-ui
+cd ClarityVault2026
 
 Install dependencies
 npm install

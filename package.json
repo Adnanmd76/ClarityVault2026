@@ -5,6 +5,14 @@
   "description": "ClarityVault2026 - Multi-chain crypto wallet with clarity-driven UI",
   "license": "MIT",
   "keywords": ["ClarityVault2026", "react", "wallet", "ui", "web3", "crypto", "bitcoin", "ethereum"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adnanmd76/ClarityVault2026.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adnanmd76/ClarityVault2026/issues"
+  },
+  "homepage": "https://github.com/Adnanmd76/ClarityVault2026#readme",
   "dependencies": {
     "alchemy-sdk": "^3.4.4",
     "@uniswap/v3-sdk": "^3.10.0",
