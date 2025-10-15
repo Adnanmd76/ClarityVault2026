@@ -1,10 +1,10 @@
 {
-  "name": "clarityvault2025",
+  "name": "clarityvault",
   "version": "1.0.0",
   "private": true,
-  "description": "Secure multi-chain wallet with clarity-driven UI",
+  "description": "Multi-chain crypto wallet with clarity-driven UI",
   "license": "MIT",
-  "keywords": ["react", "wallet", "ui", "web3", "crypto"],
+  "keywords": ["react", "wallet", "ui", "web3", "crypto", "bitcoin", "ethereum"],
   "dependencies": {
     "@alchemy/alchemy-sdk": "^2.6.2",
     "@uniswap/v3-sdk": "^3.10.0",
