@@ -75,8 +75,8 @@ function Header() {
     <HeaderContainer>
       <Nav>
         <LogoContainer to="/">
-          <LogoImage src={Logo} alt="Wallet UI Logo" />
-          <LogoText>Wallet UI</LogoText>
+          <LogoImage src={Logo} alt="ClarityVault2026 Logo" />
+          <LogoText>ClarityVault2026</LogoText>
         </LogoContainer>
         <NavLinks>
           <NavLink to="/">Home</NavLink>

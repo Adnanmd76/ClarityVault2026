@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "wallet-ui",
+  "name": "ClarityVault2026",
   "builds": [
     {
       "src": "package.json",

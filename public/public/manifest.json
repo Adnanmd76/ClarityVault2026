@@ -1,6 +1,6 @@
 {
-  "short_name": "Wallet UI",
-  "name": "Wallet UI - Modern Digital Wallet",
+  "short_name": "ClarityVault2026",
+  "name": "ClarityVault2026 - Modern Multi-Chain Crypto Wallet",
   "icons": [
     {
       "src": "favicon.ico",
@@ -24,7 +24,7 @@
   "display": "standalone",
   "theme_color": "#3498db",
   "background_color": "#ffffff",
-  "description": "A modern, responsive, and user-friendly wallet interface for managing digital assets.",
+  "description": "ClarityVault2026 - A modern, secure multi-chain crypto wallet for Bitcoin, Ethereum, and Stacks.",
   "orientation": "portrait",
   "categories": ["finance", "productivity", "utilities"],
   "lang": "en"
