@@ -27,5 +27,5 @@ All notable changes to this project will be documented in this file.
 ## [0.9.0] - 2025-09-10
 
 ✨ **Initial Release**
-- Wallet UI base setup with React + Tailwind
+- ClarityVault2026 base setup with React + Tailwind
 - Basic wallet connect and balance view

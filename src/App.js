@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // --- ہماری بنائی ہوئی سروس اور کمپوننٹس کو امپورٹ کریں ---
 import { connectWallet, disconnectWallet, userSession, getUserAddress } from './services/stacks-service';
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <SpeedInsights />
       <div className="app-container">
         {/* --- ہیڈر (Header) --- */}
         <header className="app-header">

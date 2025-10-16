@@ -1,6 +1,6 @@
 # 🌿 Environment Configuration Guide
 
-This document outlines the required environment variables and configuration setup for Wallet UI.
+This document outlines the required environment variables and configuration setup for ClarityVault2026.
 
 ---
 

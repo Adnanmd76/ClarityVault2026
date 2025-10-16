@@ -1,7 +1,7 @@
 # 🧿 Project Name
 
 Short description of the project, its purpose, and cultural inspiration.  
-This template is designed to help maintain a **professional and consistent README** across all Wallet UI projects.
+This template is designed to help maintain a **professional and consistent README** across all ClarityVault2026 projects.
 
 ---
 ## 📂 Project Structure

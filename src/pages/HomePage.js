@@ -90,9 +90,9 @@ function HomePage() {
     <HomeContainer>
       <WelcomeSection>
         <LogoContainer>
-          <LogoImage src={Logo} alt="Wallet UI Logo" />
+          <LogoImage src={Logo} alt="ClarityVault2026 Logo" />
         </LogoContainer>
-        <WelcomeTitle>Welcome to Wallet UI</WelcomeTitle>
+        <WelcomeTitle>Welcome to ClarityVault2026</WelcomeTitle>
         <WelcomeSubtitle>Manage your digital assets with ease</WelcomeSubtitle>
       </WelcomeSection>
 

@@ -1,11 +1,11 @@
 {
-  "name": "Wallet UI",
-  "short_name": "Wallet",
+  "name": "ClarityVault2026",
+  "short_name": "ClarityVault2026",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0d6efd",
-  "description": "A simple crypto wallet user interface with smart contract integration.",
+  "description": "ClarityVault2026 - Multi-chain crypto wallet for Bitcoin, Ethereum, and Stacks with clarity-driven UI.",
   "icons": [
     {
       "src": "/icons/icon-192.png",

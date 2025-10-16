@@ -1,6 +1,6 @@
-# 🧪 Wallet UI Testing Guide
+# 🧪 ClarityVault2026 Testing Guide
 
-This document outlines the testing strategy for Wallet UI, including tools, structure, and CI integration.
+This document outlines the testing strategy for ClarityVault2026, including tools, structure, and CI integration.
 
 ---
 
