@@ -1,19 +1,19 @@
 {
   "name": "ClarityVault2026",
-  "short_name": "ClarityVault2026",
+  "short_name": "ClarityVault",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0d6efd",
-  "description": "ClarityVault2026 - Multi-chain crypto wallet for Bitcoin, Ethereum, and Stacks with clarity-driven UI.",
+  "theme_color": "#00BFFF",
+  "description": "A modern, secure, and user-friendly multi-chain crypto wallet for managing Bitcoin, Ethereum, and Stacks.",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
