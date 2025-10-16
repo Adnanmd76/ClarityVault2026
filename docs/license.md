@@ -1,6 +1,6 @@
 # 🏷️ License
 
-Wallet UI is licensed under the MIT License.
+ClarityVault2026 is licensed under the MIT License.
 
 ---
 

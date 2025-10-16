@@ -1,6 +1,6 @@
 # 🌍 Localization & RTL Support Guide
 
-This document explains how Wallet UI supports multiple languages and right-to-left (RTL) layouts for culturally inclusive design.
+This document explains how ClarityVault2026 supports multiple languages and right-to-left (RTL) layouts for culturally inclusive design.
 
 ---
 

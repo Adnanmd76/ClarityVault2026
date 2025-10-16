@@ -1,6 +1,6 @@
 # ⚙️ CI/CD Status & Workflow Guide
 
-This document defines the CI/CD setup and current pipelines for **Wallet UI** using GitHub Actions.  
+This document defines the CI/CD setup and current pipelines for **ClarityVault2026** using GitHub Actions.  
 It ensures quality, stability, and reliable deployments.
 
 ---
@@ -9,11 +9,11 @@ It ensures quality, stability, and reliable deployments.
 
 | Workflow          | Status                                                                 |
 |-------------------|------------------------------------------------------------------------|
-| Build & Test      | ![Build](https://img.shields.io/github/actions/workflow/status/Adnanmd76/wallet-ui/main.yml?branch=main) |
+| Build & Test      | ![Build](https://img.shields.io/github/actions/workflow/status/Adnanmd76/ClarityVault2026/main.yml?branch=main) |
 | License           | ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) |
 | React Version     | ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react) |
-| Lint & Test       | ![CI](https://github.com/Adnanmd76/wallet-ui/actions/workflows/ci.yml/badge.svg) |
-| Build & Deploy    | ![Deploy](https://github.com/Adnanmd76/wallet-ui/actions/workflows/deploy.yml/badge.svg) |
+| Lint & Test       | ![CI](https://github.com/Adnanmd76/ClarityVault2026/actions/workflows/ci.yml/badge.svg) |
+| Build & Deploy    | ![Deploy](https://github.com/Adnanmd76/ClarityVault2026/actions/workflows/deploy.yml/badge.svg) |
 
 ---
 
