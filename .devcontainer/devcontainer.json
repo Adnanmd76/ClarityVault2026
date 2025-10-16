@@ -1,5 +1,5 @@
 {
-	"name": "Wallet UI Development",
+	"name": "ClarityVault2026 Development",
 	"build": {
 		"context": ".",
 		"dockerfile": "Dockerfile"

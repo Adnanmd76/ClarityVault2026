@@ -1,6 +1,6 @@
-# 🤝 Contributing to Wallet UI
+# 🤝 Contributing to ClarityVault2026
 
-Thank you for considering contributing to Wallet UI! We welcome all kinds of contributions—code, design, documentation, and ideas.
+Thank you for considering contributing to ClarityVault2026! We welcome all kinds of contributions—code, design, documentation, and ideas.
 
 ---
 
@@ -9,4 +9,4 @@ Thank you for considering contributing to Wallet UI! We welcome all kinds of con
 1. **Fork the repository**
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/your-username/wallet-ui.git
+   git clone https://github.com/your-username/ClarityVault2026.git

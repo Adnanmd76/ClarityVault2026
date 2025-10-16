@@ -1,6 +1,6 @@
-# 📂 Wallet UI Folder Structure
+# 📂 ClarityVault2026 Folder Structure
 
-This document outlines the approved folder structure for the Wallet UI module. Adhering to this structure ensures consistency and maintainability across the project.
+This document outlines the approved folder structure for the ClarityVault2026 module. Adhering to this structure ensures consistency and maintainability across the project.
 
 ## Root Directory
 
