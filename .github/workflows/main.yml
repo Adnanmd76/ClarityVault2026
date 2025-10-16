@@ -1,4 +1,4 @@
-name: Wallet UI CI
+name: ClarityVault2026 CI
 
 on:
   push:
@@ -14,13 +14,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup Node.js
+    - name: Setup Node.js v20
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '20'
+
+    - name: Cache Node.js modules
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run tests
       run: npm run test
